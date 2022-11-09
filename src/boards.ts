@@ -948,9 +948,9 @@ ${ CUSTOM_STYLE_FILE ? `<link rel="stylesheet" href="${ CUSTOM_STYLE_FILE }">`
                 Path.join(R.fsPath, p)
             );
 
-            u = vscode.Uri.file( PATH_TO_CHECK ).with({
-                scheme: 'vscode-resource'
-            });
+            u = this.panel.webview.asWebviewUri(
+                vscode.Uri.file( PATH_TO_CHECK )
+            );
 
             try {
                 if (vscode_helpers.isFileSync(PATH_TO_CHECK, false)) {
@@ -1273,9 +1273,9 @@ ${ CUSTOM_STYLE_FILE ? `<link rel="stylesheet" href="${ CUSTOM_STYLE_FILE }">`
                 } catch { }
             });
 
-            newPanel.webview.html = this.generateHTML();
-
             this._panel = newPanel;
+
+            newPanel.webview.html = this.generateHTML();
 
             return true;
         } catch (e) {

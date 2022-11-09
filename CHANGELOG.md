@@ -6,6 +6,11 @@
 <span class="badge-patreon"><a href="https://patreon.com/mkloubert" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
 <span class="badge-buymeacoffee"><a href="https://buymeacoffee.com/mkloubert" title="Donate to this project using Buy Me A Coffee"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg" alt="Buy Me A Coffee donate button" /></a></span>
 
+## 1.33.2 (November 9th, 2022; last release => bugfixes)
+
+* this is the last release ... read this for more information: https://github.com/vscode-kanban/vscode-kanban/issues/16
+* bugfixes
+
 ## 1.33.0 (April 29th, 2022; npm update)
 
 * npm update
